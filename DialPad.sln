@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35605.110 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialPad", "DialPad\DialPad.csproj", "{C7E2B94F-4019-4878-BBC8-831F5AC773ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialPadTests", "DialPadTests\DialPadTests.csproj", "{89951997-3C0F-4988-911D-4F28D291A18C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7E2B94F-4019-4878-BBC8-831F5AC773ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E2B94F-4019-4878-BBC8-831F5AC773ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E2B94F-4019-4878-BBC8-831F5AC773ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E2B94F-4019-4878-BBC8-831F5AC773ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89951997-3C0F-4988-911D-4F28D291A18C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89951997-3C0F-4988-911D-4F28D291A18C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89951997-3C0F-4988-911D-4F28D291A18C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89951997-3C0F-4988-911D-4F28D291A18C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02ECE625-9D95-4A2D-B986-165EE9754203}
+	EndGlobalSection
+EndGlobal
