@@ -6,14 +6,14 @@ namespace Application {
         private static Dictionary<char, string> dialMap = new Dictionary<char, string>
         {
             { '1', "&'(" },
-            { '2', "abc" },
-            { '3', "def" },
-            { '4', "ghi" },
-            { '5', "jkl" },
-            { '6', "mno" },
-            { '7', "pqrs" },
-            { '8', "tuv" },
-            { '9', "wxyz" },
+            { '2', "ABC" },
+            { '3', "DEF" },
+            { '4', "GHI" },
+            { '5', "JKL" },
+            { '6', "MNO" },
+            { '7', "PQRS" },
+            { '8', "TUV" },
+            { '9', "WXYZ" },
             { '*', "" },
         };
 
@@ -30,6 +30,11 @@ namespace Application {
 
                 if (input[i] == '*')
                 {
+                    var xx = input[i - 1];
+                    if (input[i - 1] == ' ' && output.Length > 0)
+                    {
+                        output = output.Remove(output.Length - 1);
+                    }
                     sameCharCount = 0;
                 }
                 else if (input[i] == '#' || input[i] == ' ')
@@ -41,17 +46,17 @@ namespace Application {
                     char tempOutput = dialMap[input[i - 1]][blockIdx];
 
                     output += tempOutput;
-                    sameCharCount = 1;
+                    sameCharCount = 0;
 
                     if (input[i] == '#')
                     {
                         break;
                     }
-                    i++;
+                    //i++;
                 }
                 else
                 {
-                    if (input[i - 1] == '*')
+                    if (input[i - 1] == '*' || input[i - 1] == ' ')
                     {
                         sameCharCount = 1;
                     }
@@ -74,8 +79,13 @@ namespace Application {
             }
             return output;
         }
-    }
 
+        public static void Main(string[] args)
+        {
+            string ans = Pad.OldPhonePad("8 88777444666*664#”");
+            Console.WriteLine(ans);
+        }
+    }
 }
 
 

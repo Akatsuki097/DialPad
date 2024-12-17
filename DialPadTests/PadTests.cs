@@ -6,7 +6,7 @@
         [TestMethod()]
         public void OldPhonePadTest()
         {
-            Assert.AreEqual(Pad.OldPhonePad("8 88777444666*664#"), "turing");
+            Assert.AreEqual(Pad.OldPhonePad("8 88777444666*664#"), "TURING");
         }
     }
 }
